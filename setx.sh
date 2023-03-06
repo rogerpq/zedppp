@@ -1,9 +1,9 @@
 #!/bin/bash
 
 echo "
-          Zed-Thon
+          rogerpq
 
-        𓍹 Visit @Zedthon for help 𓍻
+        𓍹 Visit @Repthon for help 𓍻
 "
 
 python3 -m userbot
