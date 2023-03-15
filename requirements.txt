@@ -1,4 +1,4 @@
-telethon
+Telethon==1.25.2
 setuptools
 wheel
 aiofiles
@@ -17,7 +17,7 @@ emoji
 fonttools
 geopy
 git+https://github.com/buddhhu/img2html.git
-git+https://github.com/yt-dlp/yt-dlp@master
+yt_dlp
 gitpython
 glitch_this
 google-api-python-client
