@@ -46,7 +46,7 @@ _run_catpack_git() {
 import sys
 
 OFFICIAL_UPSTREAM_REPO = "https://github.com/rogerpq/zedppp"
-ACTIVE_BRANCH_NAME = "master"
+ACTIVE_BRANCH_NAME = "main"
 
 repo = Repo.init()
 origin = repo.create_remote("temponame", OFFICIAL_UPSTREAM_REPO)
@@ -70,7 +70,7 @@ repo.heads[ACTIVE_BRANCH_NAME].checkout(True) ')
 
 _set_bot () {
     local zippath
-    zippath="catuserbot.zip"
+    zippath="Ralls_USERBOT.zip"
     echo "⫷ جاري تنزيل اكواد السورس ⫸"
     wget -q $(_get_ziplink) -O "$zippath"
     echo "⫷ تفريغ البيانات ⫸"
