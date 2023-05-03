@@ -15,7 +15,7 @@
       "description": "ادخل اسم حسابك التيلي هنا مو مهم عربي لو انكلش",
       "value": ""
     },
-    "API_ID": {
+    "APP_ID": {
       "description": "ايبي ايدي الكود الصغير",
       "value": ""
     },
@@ -23,7 +23,7 @@
       "description": "كود ايبي هاش",
       "value": ""
     },
-    "SESSION": {
+    "STRING_SESSION": {
       "description": "كود التيرمكس - تروح ع حافظـة حسـابك التيلـي وتنسـخ الكـود الكبير",
       "value": ""
     },
@@ -31,22 +31,17 @@
       "description": "خليها كمـا هـي اضغط /skip للتخطـي",
       "value": "ANYTHING"
     },
-    "BOT_USERNAME": {
+    "TG_BOT_USERNAME": {
       "description": "معرف البوت مع الـ @ من @BotFather ",
       "value": ""
     },
-    "BOT_TOKEN": {
+    "TG_BOT_TOKEN": {
       "description": " توكن البوت - من @BotFather يجب وضع البوت انلاين مود من اعدادات بوت فاذر",
       "value": ""
     },
     "COMMAND_HAND_LER": {
       "description": "نقطـة الاوامـر خليها كمـا هـي اضغط /skip للتخطـي",
       "value": ".",
-      "required": false
-    },
-    "OWNER_ID": {
-      "description": "ايدي حسابك - تروح ع @username_to_id_bot ",
-      "value": "",
       "required": false
     },
     "HEROKU_API_KEY": {
