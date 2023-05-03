@@ -6,7 +6,7 @@ _get_ziplink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "Rep" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL3JvZ2VycHEvUmFsbHNfVVNFUkJPVC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL3JvZ2VycHEvUmVwdGhvbi1fLS9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         if [[ $UPSTREAM_REPO_BRANCH ]]
@@ -16,7 +16,7 @@ _get_ziplink () {
             echo "${UPSTREAM_REPO}/archive/master.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL3JvZ2VycHEvUmFsbHNfVVNFUkJPVC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL3JvZ2VycHEvUmVwdGhvbi1fLS9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
     fi
 }
 
@@ -26,12 +26,12 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "Rep" ]]
     then
-        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL3JvZ2VycHEvUmFsbHNfVVNFUkJPVC5naXQ=" | base64 -d`
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL3JvZ2VycHEvUmVwdGhvbi1fLS5naXQ=" | base64 -d`
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         rlink=`echo "${UPSTREAM_REPO}"`
     else
-        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL3JvZ2VycHEvUmFsbHNfVVNFUkJPVC5naXQ=" | base64 -d`
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL3JvZ2VycHEvUmVwdGhvbi1fLS5naXQ=" | base64 -d`
     fi
     echo "$rlink"
 }
@@ -45,8 +45,8 @@ _run_catpack_git() {
     $(_run_python_code 'from git import Repo
 import sys
 
-OFFICIAL_UPSTREAM_REPO = "https://github.com/rogerpq/zedppp"
-ACTIVE_BRANCH_NAME = "main"
+OFFICIAL_UPSTREAM_REPO = "https://github.com/rogerpq/Repthon-_-"
+ACTIVE_BRANCH_NAME = "master"
 
 repo = Repo.init()
 origin = repo.create_remote("temponame", OFFICIAL_UPSTREAM_REPO)
@@ -94,7 +94,7 @@ _set_bot () {
 |___\____|____/____/|____/ \___/ |_|
   
     "
-    python3 -m userbot
+    python3 -m zthon
 }
 
 _set_bot
